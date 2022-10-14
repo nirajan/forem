@@ -2,6 +2,8 @@ services:
   - type: pserv
     name: redis
     env: docker
+    plan: starter
+    region: singapore
     autoDeploy: false
     repo: https://github.com/render-examples/redis.git
     disk:
