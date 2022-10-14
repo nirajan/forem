@@ -15,6 +15,7 @@ services:
     dockerContext: ./elasticsearch
     env: docker
     plan: standard
+    region: singapore
     disk:
       name: esdata
       mountPath: /usr/share/elasticsearch/data
@@ -43,6 +44,7 @@ services:
     dockerContext: ./forem
     dockerCommand: ./scripts/sidekiq.sh
     plan: starter plus
+    region: singapore
     autoDeploy: false
     envVars:
       - fromGroup: rails
@@ -77,6 +79,7 @@ services:
     dockerContext: ./forem
     dockerCommand: ./scripts/rails.sh
     plan: starter plus
+    region: singapore
     autoDeploy: false
     disk:
       name: data
@@ -111,7 +114,7 @@ services:
 databases:
   - name: forem
     plan: starter
-
+    region: singapore
 envVarGroups:
   - name: rails
     envVars:
