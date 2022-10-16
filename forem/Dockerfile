@@ -1,4 +1,4 @@
-FROM github.com/forem/forem
+FROM github.com/forem/forem.git
 
 # We create the localimages/uploads symlink to enable serving images from 
 # the Rails server in production. 
