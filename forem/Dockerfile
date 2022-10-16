@@ -1,4 +1,4 @@
-FROM github.com/forem/forem.git
+FROM quay.io/forem/forem:production
 
 # We create the localimages/uploads symlink to enable serving images from 
 # the Rails server in production. 
